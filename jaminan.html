@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRENT - Form Jaminan</title>
+    <link rel="stylesheet" href="css/jaminan.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Logo-removebg-preview.png" alt="Logo">
+                <span>GORENT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html ">Kendaraan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="rental-summary">
+                <h2>Ringkasan Penyewaan</h2>
+                <div class="summary-item">
+                    <span>Kendaraan:</span>
+                    <span id="car-name">NEW KIJANG INNOVA</span>
+                </div>
+                <div class="summary-item">
+                    <span>Tipe Transmisi:</span>
+                    <span id="transmission-type">Manual</span>
+                </div>
+                <div class="summary-item">
+                    <span>Durasi Sewa:</span>
+                    <span id="rental-duration">1 Hari</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total Harga:</span>
+                    <span id="total-price">Rp 500.000</span>
+                </div>
+            </div>
+
+            <form id="guarantee-form" class="guarantee-form">
+                <h2>Data Diri dan Jaminan</h2>
+                
+                <div class="form-group">
+                    <label for="full-name">Nama Lengkap</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Nomor HP</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Alamat Lengkap</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ktp">Foto KTP</label>
+                    <input type="file" id="ktp" name="ktp" accept="image/*" required>
+                    <small>Pastikan foto KTP jelas dan terbaca</small>
+                </div>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                    <label for="agree-terms">Saya menyetujui syarat dan ketentuan yang berlaku</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Lanjutkan Pembayaran</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>CARRENT</h3>
+            <p>Sewa Kendaraan Cepat, Aman, dan Terpercaya</p>
+            <p class="copyright">© 2025 CARRENT, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/jaminan.js"></script>
+</body>
+</html>
